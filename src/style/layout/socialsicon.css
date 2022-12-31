@@ -1,0 +1,18 @@
+.social-icons{
+    width: 100%;
+    overflow: hidden;
+}
+
+.social-icon {
+    margin: 1rem 0;
+    color:var(--color-white,white);
+    cursor: pointer;
+    font-size: 1rem;
+}
+aside.open .social-icon,
+.navbar-mobile .social-icon {
+    margin: 1rem;
+    padding: 0.5rem;
+    display: inline-block;
+    font-size: 1.5rem;
+}

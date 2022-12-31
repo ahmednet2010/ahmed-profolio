@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import "./lib/bootstrap-grid.css";
+@import "./lib/fontawesome.min.css";
+@import "./fonts.css";
+/*start own css style*/
+:root{
+    --color-main: #FE5B02;
+    --color-black: #241F21;
+    --color-gray: #DBDBDB;
+    --color-white: #fff;
+}
+*,
+*::before,
+*::after {
+    border: 0;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html[dir=ltr],body,:root {
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+}
+
+html[dir=rtl],body,:root {
+    font-family: "URW DIN Arabic", Tahoma, sans-serif;
+}
+
+html,
+:root,
+body {
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6,.Hfont{
+    font-family: 'Poppins', sans-serif;
+}
+.Pfont {
+    font-family: 'Roboto', sans-serif;
+}
+img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+button,
+a {
+    cursor: pointer;
+    background-color: transparent;
+    color:inherit;
+    text-decoration: none;
+}
+.position-relative{
+    position: relative;
+}
+ul{
+    list-style: none;
+}
+.text-capitalize{
+    text-transform: capitalize;
+}
+.bold{
+    font-weight: bold;
+}
+button:hover,
+a:hover {
+    background-color: transparent;
+    text-decoration: none;
+}
+.tage{
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    text-transform: capitalize;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tage:hover {
+    background-color: var(--color-main);
+}
+.hire-me{
+    margin-top: 1rem;
+}
+.tages {
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+}
+@import "./layout/socialsicon.css";
+@import "./layout/aside.css";
+@import "./layout/navbar.css";
+@import "./layout/contactme.css";

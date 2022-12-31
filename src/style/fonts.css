@@ -1,0 +1,39 @@
+/*start fonts */
+/*google font api*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Roboto:wght@400;500;700&display=swap');
+@font-face {
+    font-family: 'URW DIN Arabic';
+    src: local('URW DIN Arabic Medium'), local('URWDINArabic-Medium'),
+        url('webfonts/URWDINArabic-Medium.woff2') format('woff2'),
+        url('webfonts/URWDINArabic-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'URW DIN Arabic';
+    src: local('URW DIN Arabic Light'), local('URWDINArabic-Light'),
+        url('webfonts/URWDINArabic-Light.woff2') format('woff2'),
+        url('webfonts/URWDINArabic-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'URW DIN Arabic';
+    src: local('URW DIN Arabic Bold'), local('URWDINArabic-Bold'),
+        url('webfonts/URWDINArabic-Bold.woff2') format('woff2'),
+        url('webfonts/URWDINArabic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'URW DIN Arabic';
+    src: local('URW DIN Arabic'), local('URWDINArabic-Regular'),
+        url('webfonts/URWDINArabic-Regular.woff2') format('woff2'),
+        url('webfonts/URWDINArabic-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*end fonts */
