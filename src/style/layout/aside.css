@@ -41,6 +41,7 @@ aside .info-title{
 aside .info-text{
     font-size: 1.5rem;
     font-weight: 700;
+    font-family: var(--font-headeing);
 }
 aside .info-contact{
     flex-direction: row;

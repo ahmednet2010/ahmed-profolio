@@ -1,13 +1,16 @@
 @charset "UTF-8";
+@import "./fonts.css";
 @import "./lib/bootstrap-grid.css";
 @import "./lib/fontawesome.min.css";
-@import "./fonts.css";
 /*start own css style*/
 :root{
     --color-main: #FE5B02;
     --color-black: #241F21;
     --color-gray: #DBDBDB;
     --color-white: #fff;
+    --font-headeing: 'Poppins', sans-serif;
+    --font-rtl: "URW DIN Arabic", Tahoma, sans-serif;
+    --font-family: 'Roboto', sans-serif;
 }
 *,
 *::before,
@@ -19,12 +22,12 @@
     box-sizing: border-box;
 }
 html[dir=ltr],body,:root {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight:400;
 }
 
 html[dir=rtl],body,:root {
-    font-family: "URW DIN Arabic", Tahoma, sans-serif;
+    font-family: var(--font-rtl)
 }
 
 html,
@@ -35,11 +38,8 @@ body {
 body{
     overflow-x: hidden;
 }
-h1,h2,h3,h4,h5,h6,.Hfont{
-    font-family: 'Poppins', sans-serif;
-}
-.Pfont {
-    font-family: 'Roboto', sans-serif;
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--font-headeing)
 }
 img {
     max-width: 100%;
@@ -73,6 +73,9 @@ a:hover {
     background-color: transparent;
     text-decoration: none;
 }
+.row{
+    padding: 1rem 0;
+}
 .tage{
     padding: 0.5rem 1rem;
     margin: 0.5rem 0;
@@ -83,6 +86,7 @@ a:hover {
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
+    font-family: var(--font-headeing);
 }
 .tage:hover {
     background-color: var(--color-main);
@@ -93,6 +97,13 @@ a:hover {
 .tages {
     margin: 1rem 0;
     padding: 0.5rem 0;
+}
+.section-title{
+    font-family: var(--font-headeing);
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0.5rem 0;
 }
 @import "./layout/socialsicon.css";
 @import "./layout/aside.css";

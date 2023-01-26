@@ -7,7 +7,7 @@ export default function () {
             <h1>I love making things simple, intuitive and expertly crafted!</h1>
         </motion.div>
         <motion.div className='info-text' initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.5, delay:0.3}}>
-            <p className='Hfont'>Product is the vital essence of what i do, truly great product is born of meticulous planning and process. This is where i specialized!</p>
+            <p>Product is the vital essence of what i do, truly great product is born of meticulous planning and process. This is where i specialized!</p>
         </motion.div>
         <motion.div className='info-contact row' initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.5, delay:0.6}}>
             <div className='col'>

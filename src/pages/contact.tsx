@@ -1,7 +1,6 @@
 import React from "react";
 import Headfc from "../components/Headfc";
 import { HeadFC, PageProps,graphql, Slice } from "gatsby";
-import AsideInfo from "../components/AsideInfo";
 import "../style/main.css"
 
 const meta = {
@@ -12,8 +11,8 @@ const meta = {
 };
 const navItems = [
     {link:"/",name:"home"},
-    {link:"/about",name:"about me"},
-    {link:"/porfolio",name:"porfolio"}];
+    {link:"/about", name:"about me"},
+    {link:"/works",name:"my works"}];
 
 export default ({}:PageProps) => {
   
@@ -28,9 +27,7 @@ export default ({}:PageProps) => {
           <main className="py-3 contact-me">
             <div className='container'>
             <div className="row">
-              <div className="col-12 col-lg-6">
-                <AsideInfo/>
-              </div>
+                content
             </div>
             </div>
           </main>

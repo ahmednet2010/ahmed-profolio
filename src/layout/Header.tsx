@@ -1,28 +1,28 @@
 import React from 'react'
+import { motion } from "framer-motion" 
 import { StaticImage } from "gatsby-plugin-image"
+
+const skills = ["front end", "react", "discord bot", "mobile app", "data entery", "excel vba"]
 export default function () {
     return (
         <header className="py-3">
             <div className='container'>
-                <div className="row inx">
+                <div className="row">
                     <div className="col-md-6 col-12">
-                        <h1>My Name is <i>ahmed</i></h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur suscipit odio rem, repudiandae vero nemo tempore non illo, accusantium rerum corporis maxime odit ratione? Obcaecati minima molestias cupiditate sapiente repellendus.</p>
-                        <button className="hire-me tage Hfont" type="button">hire me</button>
-                        <div className="tages d-flex flex-row flex-wrap justify-content-between">
-                            <h6 className="tage Hfont">front end</h6>
-                            <h6 className="tage Hfont">mobile app</h6>
-                            <h6 className="tage Hfont">react</h6>
-                            <h6 className="tage Hfont">bot</h6>
-                            <h6 className="tage Hfont">typescript</h6>
-                        </div>
-                    </div>
-                    <div className="col-md-6 col-12 d-none d-md-block">
-                    <StaticImage src="https://cdn.discordapp.com/ephemeral-attachments/1056263700899709013/1056264253729935400/0506651765_acrylic_texture_mariachi_skeleton_playing_music_trum_7a60e6af-f9fe-497b-88ed-56839a157503.png" alt="ahmed image" layout="constrained" placeholder='blurred'/>
+                        <motion.h1 initial={{x:"100vh"}} animate={{x:0}} transition={{duration:0.5,type:"spring", stiffness:100}}>My Name is <i>ahmed</i></motion.h1>
+                        <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1,ease:"linear"}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur suscipit odio rem, repudiandae vero nemo tempore non illo, accusantium rerum corporis maxime odit ratione? Obcaecati minima molestias cupiditate sapiente repellendus.</motion.p>
+                        <motion.button className="hire-me tage" type="button" initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.5,ease:"easeIn"}}>hire me</motion.button>
                     </div>
                 </div>
                 <div className='row'>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita est tempora harum, fuga porro laboriosam inventore cumque odio, dolores commodi corporis officia voluptatibus dolorem iste repellendus? Ratione hic ab rem temporibus. Nihil ex, doloribus illo et eos suscipit quidem! Unde culpa tempora quaerat alias reprehenderit debitis, eaque consectetur iure a fugiat. Veritatis omnis blanditiis minus ratione odit possimus suscipit, impedit optio consequuntur libero. Alias debitis eos neque sit omnis magni eaque numquam tempore. Itaque modi exercitationem nesciunt ducimus. Aliquid reiciendis dolor, architecto vero obcaecati doloremque voluptas distinctio totam neque? Vel, iste aspernatur. Expedita cupiditate perferendis nisi natus dolore ipsa asperiores possimus eos nesciunt, vel nulla atque quos quisquam doloremque minima quidem quia id impedit odio maiores facilis quasi dicta. Debitis nisi consequuntur repudiandae dolore officiis illum reiciendis ex libero magni dolor exercitationem repellendus ipsa, dolorem a expedita omnis provident quibusdam autem fuga. Voluptatibus maiores modi recusandae ea perferendis quo quaerat.
+                    <motion.h2 className='section-title' initial={{x:"100vh"}} animate={{x:0}} transition={{duration:0.5,type:"spring", stiffness:100}}>skills</motion.h2>
+                    <div className='col-12 col-md-8 col-lg-6'>
+                        <div className="tages d-flex flex-row flex-wrap justify-content-around">
+                            {skills.map((skill,i) => (
+                                <motion.h6 className="tage" initial={{opacity:0}} animate={{opacity:1}} transition={{delay:i/2,duration:0.5,ease:"easeIn"}}>{skill}</motion.h6>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
