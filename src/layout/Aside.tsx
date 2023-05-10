@@ -11,9 +11,9 @@ export default function () {
   return (
     <motion.aside 
     className={`d-none d-md-block p-2 ${open? "open":""}`}
-    initial={{x:"-50vw",right:"90%"}} 
+    initial={{x:"50vw",left:"90%"}} 
     animate={open? "open":"close"}
-    variants={{open:{x:0,right:0},close:{x:0,right:"90%"}}}
+    variants={{open:{x:0,left:0},close:{x:0,left:"90%"}}}
     transition={{type:"spring", stiffness:130, duration:1}}>
       <div className='container'>
           <button onClick={openAside} type='button'>

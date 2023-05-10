@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion"
 
 const socialsMedia = [{icon:"fa-brands fa-xl fa-facebook",name:"facebook",link:"#"},
-      {icon:"fa-brands fa-xl fa-twitter",name:"twitter",link:"#"},
+      {icon:"fa-brands fa-xl fa-github",name:"github",link:"#"},
       {icon:"fa-brands fa-xl fa-linkedin",name:"linkedin",link:"#"}]
 
 export default function () {

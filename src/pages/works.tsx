@@ -4,15 +4,15 @@ import { HeadFC, PageProps,graphql, Slice } from "gatsby";
 import "../style/main.css"
 
 const meta = {
-  title: "my works",// replace title between "" with your title
+  title: "اعمالي",// replace title between "" with your title
   description:"Some text are vital for SEO",// replace description between "" with your description for seo
   keyword:"ahmed,profolio",// replace keyword between "" with your keyword for seo
   generator:"Some text are vital for SEO",// replace text in "" with your keyword for seo
 };
 const navItems = [
-    {link:"/",name:"home"},
-    {link:"/about",name:"about me"},
-    {link:"/contact",name:"contact me"}];
+    {link:"/",name:"الرئيسيه"},
+    {link:"/about",name:"عني"},
+    {link:"/contact",name:"تواصل معي"}];
 
 export default ({}:PageProps) => {
   
@@ -36,7 +36,7 @@ export default ({}:PageProps) => {
   </div>
 )};
 
-export const Head: HeadFC = ({ data }: any) =><Headfc meta={meta} data={data.site.siteMetadata} dir="ltr" lang="en"/>
+export const Head: HeadFC = ({ data }: any) =><Headfc meta={meta} data={data.site.siteMetadata} dir="rtl" lang="ar"/>
 
 
 export const query = graphql`

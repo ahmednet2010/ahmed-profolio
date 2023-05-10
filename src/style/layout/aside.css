@@ -4,7 +4,7 @@ aside {
     text-align: center;
     min-height: 600px;
     height: 100vh;
-    left: 0;
+    right: 0;
     z-index: 999;
     top: 0;
     bottom: 0;
@@ -14,7 +14,7 @@ aside button:hover {
     color:var(--color-white, white)
 }
 aside.open {
-    text-align: left;
+    text-align: right;
 }
 .aside-icons{
     position:absolute;

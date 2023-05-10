@@ -17,7 +17,7 @@ export const Head: HeadFC = function ({ data }: any) {
     keyword:"ahmed,profolio",// replace keyword between "" with your keyword for seo
     generator:"Some text are vital for SEO",// replace text in "" with your keyword for seo
   };
-  return <Headfc meta={meta} data={data.site.siteMetadata} dir="ltr" lang="en"/>
+  return <Headfc meta={meta} data={data.site.siteMetadata} dir="rtl" lang="ar"/>
 };
 
 export const query = graphql`

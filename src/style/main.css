@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import "./fonts.css";
-@import "./lib/bootstrap-grid.css";
+@import "./lib/bootstrap-grid.rtl.css";
 @import "./lib/fontawesome.min.css";
 /*start own css style*/
 :root{
